@@ -18,12 +18,20 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   height: 100%;
   margin: 0;
   font-family: "Arial", sans-serif;
   background-color: cyan;
+}
+
+ul,ol,li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -59,6 +67,51 @@ img {
   justify-content: space-between;
 
 }
+
+
+
+.pokemon-img{
+  width: 100%;
+}
+
+.pokemon-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pokemon-header{
+  padding: 20px;
+  position: relative;
+}
+
+.pokemon-num{
+  position: absolute;
+  right: -15px;
+  top: -10px;
+}
+
+.poke-card-img{
+  width: 100%;
+}
+
 .media-uchun{
   width: 16%;
+}
+
+@media only screen and (max-width: 500px) {
+  .media-uchun{
+      width: 100%;
+  }
+}
+
+.card-poke-footer{
+  position: relative;
+}
+
+.poke-time{
+  top: -10px;
+  right: -15px;
+  position: absolute;
 }

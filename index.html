@@ -38,7 +38,7 @@
       name="pokemon_to_candy"
       aria-label="Enter your to year movie"
       placeholder="To candy...">
-
+      
       
       <select class="js-movies-sort  media-uchun form-select me-0 me-md-2 mb-2 mb-md-0" name="sorted_movies" aria-label="Sorted movies">
         <option disabled hidden selected>Sorted</option>
@@ -47,13 +47,43 @@
         <option value="light-weight">from light to weight</option>
         <option value="weight-light">from weight to light </option>
       </select>
-
+      
       <select class="js-select-genres  media-uchun form-select me-0 me-md-2 mb-2 mb-md-0" name="category" aria-label="Choose your category">
         <option value="all">All</option>
       </select>
       <button class="btn btn-success " type="submit">Search</button>
       
     </form>
+    
+    <ul class="pokemon-list js-list row">
+      <li class="pokemon-item js-item col-12 col-sm-4 col-md-4 col-lg-3 mb-3">
+        <div class="card border-0">
+          <div class="pokemon-header card-header bg-secondary">
+            <span class="pokemon-num js-num badge bg-danger">001</span>
+            <h3 class="text-center text-white js-title">hvjflerfvbergbhet</h3>
+          </div>
+          <div class="card-body">
+            <img class="poke-card-img js-card-img" src="http://www.serebii.net/pokemongo/pokemon/001.png" alt="">
+          </div>
+          <div class="card-poke-footer card-footer bg-success pt-3">
+            <span class="poke-time js-poke-time badge bg-warning">20:00</span>
+            <h4 class="text-center mb-2"><b>Bulbasaur Candy</b></h4>
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="qwr">
+                <p class="m-0">candy count</p>
+                <p class="js-candy-count text-center m-0"><b>100</b></p>
+              </div>
+              <div class="qwr">
+                <p class="m-0">candy count</p>
+                <p class="js-candy-count text-center m-0"><b>100</b></p>
+              </div>
+            </div>
+            <h3 class="text-center"><b>weaknesses</b></h3>
+            <p class="js-weaknesses text-center">fire, ice, flying</p>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 <!-- POKEMON END -->
