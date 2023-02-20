@@ -57,7 +57,7 @@ var pokemons = [
 	1.2,
 	1.6
 	],
-	"c": [
+	"weaknesses": [
 	"Fire",
 	"Ice",
 	"Flying",

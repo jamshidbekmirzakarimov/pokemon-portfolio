@@ -55,65 +55,40 @@
       
     </form>
     
-    <ul class="pokemon-list js-list row">
-      <li class="pokemon-item js-item col-12 col-sm-4 col-md-4 col-lg-3 mb-3">
-        <div class="card border-0">
-          <div class="pokemon-header card-header bg-secondary">
-            <span class="pokemon-num js-num badge bg-danger">001</span>
-            <h3 class="text-center text-white js-title">hvjflerfvbergbhet</h3>
-          </div>
-          <div class="card-body">
-            <img class="poke-card-img js-card-img" src="http://www.serebii.net/pokemongo/pokemon/001.png" alt="">
-          </div>
-          <div class="card-poke-footer card-footer bg-success pt-3">
-            <span class="poke-time js-poke-time badge bg-warning">20:00</span>
-            <h4 class="text-center mb-2"><b>Bulbasaur Candy</b></h4>
-            <div class="d-flex align-items-center justify-content-between mb-3">
-              <div class="qwr">
-                <p class="m-0">candy count</p>
-                <p class="js-candy-count text-center m-0"><b>100</b></p>
-              </div>
-              <div class="qwr">
-                <p class="m-0">Weight</p>
-                <p class="js-candy-count text-center m-0"><b>6.9</b></p>
-              </div>
-            </div>
-            <h3 class="text-center"><b>weaknesses</b></h3>
-            <p class="js-weaknesses text-center">fire, ice, flying</p>
-          </div>
-        </div>
-      </li>
+    <ul class="js-poke-list poke-list">
+      
     </ul>
   </div>
 </section>
 <!-- POKEMON END -->
 
 <!-- TEMPLATE START -->
+
 <template class="js-poke-temp">
-  <li class="pokemon-item js-item col-12 col-sm-4 col-md-4 col-lg-3 mb-3">
-    <div class="card border-0">
-      <div class="pokemon-header card-header bg-secondary">
-        <span class="pokemon-num js-num badge bg-danger">001</span>
-        <h3 class="text-center text-white js-title">hvjflerfvbergbhet</h3>
+  <li class="js-poke-item poke-item">
+    
+    <div class="card card-poke">
+      <div class="card-header card-poke-header bg-secondary">
+        <span class="js-poke-num badge bg-danger poke-number"></span>
+        <h3 class="js-poke-title text-center my-2 poke-title"></h3>
       </div>
       <div class="card-body">
-        <img class="poke-card-img js-card-img" src="http://www.serebii.net/pokemongo/pokemon/001.png" alt="">
+        <img class="js-poke-img poke-img" src="" alt="" />
       </div>
-      <div class="card-poke-footer card-footer bg-success pt-3">
-        <span class="poke-time js-poke-time badge bg-warning">20:00</span>
-        <h4 class="text-center mb-2"><b>Bulbasaur Candy</b></h4>
-        <div class="d-flex align-items-center justify-content-between mb-3">
-          <div class="qwr">
+      <div class="card-footer card-poke-footer card-poke bg-success">
+        <time class="js-poke-time poke-time badge bg-warning" datetime=""></time>
+        <h4 class="js-candy">Bulbasour candy</h4>
+        <p class="js-poke-type poke-type"></p>
+        <div class="d-flex justify-content-between">
+          <div class="h-25">
             <p class="m-0">candy count</p>
-            <p class="js-candy-count text-center m-0"><b>100</b></p>
+            <p class="candy-count m-0 text-center "><b>25</b></p>
           </div>
-          <div class="qwr">
+          <div>
             <p class="m-0">Weight</p>
-            <p class="js-candy-count text-center m-0"><b>6.9</b></p>
+            <p class="candy-weight m-0 text-center"><b>6.9</b></p>
           </div>
         </div>
-        <h3 class="text-center"><b>weaknesses</b></h3>
-        <p class="js-weaknesses text-center">fire, ice, flying</p>
       </div>
     </div>
   </li>
@@ -125,3 +100,15 @@
 <script src="./js/main.js"></script>
 </body>
 </html>
+
+
+
+<!-- <template class="js-poke-temp">
+  <li class="js-poke-item poke-item">
+    <img class="js-poke-img" src="" alt="" />
+    <h3 class="js-poke-title my-2 poke-title"></h3>
+    <span class="js-poke-num badge bg-dark poke-number"></span>
+    <p class="js-poke-type poke-type"></p>
+    <time class="js-poke-time poke-time badge bg-dark" datetime=""></time>
+  </li>
+</template> -->

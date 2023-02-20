@@ -1,7 +1,7 @@
 :root {
-    /* --header-bg-color: #fff; */
-    /* --main-bg-color: #fff; */
-    /* main-text-color: #fff; */
+  /* --header-bg-color: #fff; */
+  /* --main-bg-color: #fff; */
+  /* main-text-color: #fff; */
 }
 
 /* GENERAL */
@@ -65,7 +65,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  
 }
 
 
@@ -74,27 +74,9 @@ img {
   width: 100%;
 }
 
-.pokemon-list{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 
-.pokemon-header{
-  padding: 20px;
-  position: relative;
-}
 
-.pokemon-num{
-  position: absolute;
-  right: -15px;
-  top: -10px;
-}
 
-.poke-card-img{
-  width: 100%;
-}
 
 .media-uchun{
   width: 16%;
@@ -102,8 +84,38 @@ img {
 
 @media only screen and (max-width: 500px) {
   .media-uchun{
-      width: 100%;
+    width: 100%;
   }
+}
+
+.poke-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.poke-item{
+  width: 23%;
+  margin-bottom: 25px;
+}
+
+.card-poke{
+  height: 500px;
+}
+
+.card-poke-header{
+  position: relative;
+}
+
+.poke-number{
+  position: absolute;
+  top: -10px;
+  right: -15px;
+}
+
+.poke-img{
+  width: 100%;
 }
 
 .card-poke-footer{
